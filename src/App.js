@@ -34,6 +34,12 @@ class App extends React.Component {
     });
   };
 
+  clearItem = () => {
+    this.setState({
+      list: this.state.list.filter(item => !item.completed)
+    });
+  };
+
   toggleItem = id => {
     this.setState({
       list: this.state.list.map(item => {
@@ -49,16 +55,10 @@ class App extends React.Component {
     });
   };
 
-  clearItem = () => {
-    this.setState({
-      list: this.state.list.filter(item => !item.completed)
-    });
-  };
-
   render() {
     return (
-      <div>
-        <div>
+      <div className="App">
+        <div className="header">
           <h2>Welcome to your Todo App!</h2>
         </div>
         <TodoForm addItem={this.addItem} clearItem={this.clearItem} />

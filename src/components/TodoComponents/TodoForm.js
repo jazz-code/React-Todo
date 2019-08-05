@@ -20,7 +20,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="form-container">
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
@@ -28,13 +28,15 @@ class TodoForm extends React.Component {
             name="item"
             onChange={this.handleChanges}
           />
-          <button>Add</button>
+          <button className="btn">Add</button>
         </form>
         {/* <input type="submit" value={this.props.clearItem} /> 
         <button onClick={() => this.props.clearItem}>Clear</button>*/}
 
-        <button onClick={this.props.clearItem}>Clear Completed</button>
-      </>
+        <button className="btn" onClick={this.props.clearItem}>
+          Clear Selected
+        </button>
+      </div>
     );
   }
 }
