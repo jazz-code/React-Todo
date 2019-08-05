@@ -30,6 +30,10 @@ class TodoForm extends React.Component {
           />
           <button>Add</button>
         </form>
+        {/* <input type="submit" value={this.props.clearItem} /> 
+        <button onClick={() => this.props.clearItem}>Clear</button>*/}
+
+        <button onClick={this.props.clearItem}>Clear Completed</button>
       </>
     );
   }
