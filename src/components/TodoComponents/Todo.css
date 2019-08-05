@@ -1,0 +1,71 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=733&q=80https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1466&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: rgb(241, 241, 255);
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 110%;
+}
+
+.item {
+  background-color: rgb(59, 255, 255);
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+}
+
+.item p {
+  font-size: 1.5rem;
+  color: floralwhite;
+  text-align: center;
+}
+
+.item.completed {
+  /* text-decoration: 5px line-through; */
+  background-color: rgb(43, 137, 226);
+  color: rgb(202, 198, 189);
+}
+form {
+  width: 35%;
+  /* display: flex; */
+}
+
+form > input {
+  background-color: beige;
+  font-size: 1rem;
+  width: 117px;
+  border: 5px solid rgb(243, 200, 9);
+}
+
+.form-container {
+  display: flex;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(245, 157, 76);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(192, 123, 58);
+}
