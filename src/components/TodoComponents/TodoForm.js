@@ -1,4 +1,5 @@
 import React from "react";
+// import { render } from "react-dom";
 
 class TodoForm extends React.Component {
   constructor() {
@@ -20,15 +21,15 @@ class TodoForm extends React.Component {
   render() {
     return (
       <>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <input
             type="text"
             value={this.state.item}
             name="item"
             onChange={this.handleChanges}
           />
+          <button>Add</button>
         </form>
-        <button>Add</button>
       </>
     );
   }
